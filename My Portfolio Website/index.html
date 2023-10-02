@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">My Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <nav id="hamburger-nav">
+    <div class="logo">Taha Murade</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="image-taha" src="Assets/my_photo.jpeg" alt="My Profile Pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Taha Murade</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+
+        <img src="Assets/linkedin.svg" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/taha-murade-048a88264/'" />
+        <img src="Assets/github.svg" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/tahamurade'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about">
+    <!-- <p class="section__text__p1"></p> -->
+    <div class="aboutme">
+
+      <h1 class="title titli">About Me</h1>
+    </div>
+
+    <div class="section-container">
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="study">
+
+              <div>
+                <h3>SSC</h3>
+                <p>2019<br />Maharashtra State Board </p>
+              </div>
+
+
+              <div class="right-toggle">
+                <div>
+
+                  <img class="nextimage" src="Assets/caret-right-solid.svg" alt="next">
+                </div>
+                <div>
+                  <img class="nextimage" src="Assets/caret-right-solid.svg" alt="next">
+                </div>
+              </div>
+              <!-- diifferent -->
+              <div class="down-toggle">
+                <div>
+                  <img class="nextimage" src="Assets/caret-down-solid.svg" alt="next">
+                </div>
+            
+              </div>
+
+              <div>
+                <h3>HSC</h3>
+                <p>2021 <br />Maharashtra State Board</p>
+              </div>
+
+
+              <div class="right-toggle">
+
+                <div>
+                  <img class="nextimage" src="Assets/caret-right-solid.svg" alt="next">
+                </div>
+                <div>
+                  <img class="nextimage" src="Assets/caret-right-solid.svg" alt="next">
+                </div>
+              </div>
+              <!-- diifferent -->
+              <div class="down-toggle">
+                <div>
+                  <img class="nextimage" src="Assets/caret-down-solid.svg" alt="next">
+                </div>
+               
+              </div>
+
+              <div class="be">
+                <h3>B.E</h3>
+                <p>3rd year (Currently)<br />Mumbai University</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- <div class="details-container">
+
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+          </div> -->
+        </div>
+        <div class="text-container">
+          <p>
+            "Hello, I'm Taha Murade From Bhiwandi,Maharashtra. I'm currently in my third year of engineering from
+            Universal College of Engineering, pursuing a degree that combines my
+            passion for technology and creativity. I specialize in frontend development, where I craft engaging and
+            user-friendly web experiences. I'm deeply passionate about creating visually appealing and responsive
+            websites that not only look great but also provide a seamless user experience. I believe in the power of
+            technology to shape the future and am dedicated to continuously improving my skills in order to contribute
+            meaningfully to the world of web development. Outside of my studies and work, I enjoy [mention any hobbies
+            or interests that reflect your personality. I'm excited about the opportunities that lie ahead and look
+            forward to connecting with like-minded individuals in the field of technology and design."
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- skills section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 style="margin-bottom: 50px;" class="title">Skills</h1>
+
+    <div class="experience-details-container">
+
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Skills</h2>
+          <div class="article-container">
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>Tailwind</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div class="react">
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- other-skills -->
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Other Skills</h2>
+          <div class="article-container">
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div class="node">
+                <h3>Node JS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3>Figma</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+              <!-- <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div> -->
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="Assets/envelope-regular.svg" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:tahamurade01@gmail.com">tahamurade01@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="Assets/linkedin.svg" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/taha-murade-048a88264/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Taha's Portfolio &#169; 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
